@@ -4,17 +4,21 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX iter: <http://w3id.org/sparql-generate/iter/>
 PREFIX fn: <http://w3id.org/sparql-generate/fn/>
-PREFIX iarchive-api: <https://archive.org/advancedsearch.php>
 PREFIX schema: <http://schema.org/>
 PREFIX ac: <https://w3id.org/ac-ontology/aco#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX time: <https://www.w3.org/2006/time#>
 
-PREFIX test: <http://mytest.org#>
+PREFIX iarchive-api: <https://archive.org/advancedsearch.php>
+
+PREFIX iarchive-sounds: <https://w3id.org/audiocommons/services/iarchive/sounds/>
+PREFIX iarchive-tags: <https://w3id.org/audiocommons/services/iarchive/tags/>
+PREFIX iarchive-users: <https://w3id.org/audiocommons/services/iarchive/users/>
 
 GENERATE {
     GENERATE {
-        #test:mytest test:results ?resultSet.
     
         <https://archive.org/>
             rdf:type foaf:Organization ;
@@ -24,7 +28,7 @@ GENERATE {
         ?searchAction
             a schema:SearchAction ;
             schema:object <https://archive.org/> ;
-            schema:query ?ia_url; #<https://archive.org/advancedsearch.php?q=title%3A(cat)+AND+mediatype%3A(audio)&fl[]=title&fl[]=description&fl[]=licenseurl&sort[]=&sort[]=&sort[]=&rows=50&page=1&output=json> ;
+            schema:query $pattern;
             schema:startTime $startTime ;
             schema:endTime ?endTime ;
             schema:actionStatus ?actionStatus ;
@@ -32,7 +36,8 @@ GENERATE {
             schema:error ?error .
                 
         ?audioCollection
-            rdf:type ac:AudioCollection .
+            rdf:type ac:AudioCollection.
+            #ac:nodeCount ?nodeCount.
         
         GENERATE {
             ?audioCollection ac:memberNode ?audioCollectionNode .
@@ -40,27 +45,70 @@ GENERATE {
                 a ac:AudioCollectionNode ;
                 ac:nodeIndex ?index ;
                 ac:nodeContent ?audioClip .
+            ?audioClip
+                a ac:AudioClip;
+                dc:title ?title ;
+                dc:description ?description;
+                ac:author ?creator;
+                cc:license ?license;
+                ac:originalFile _:originalAudioFile.
+            _:originalAudioFile a ac:AudioFile.
+            
+            ?publisher 
+                ac:published ?audioClip;
+                a foaf:Agent.
+            
+            GENERATE {
                 ?audioClip
-                    a ac:AudioClip;
-                    dc:title ?title ;
-                    dc:description ?description;
-                    ac:author ?creator;
-                    cc:license ?license;
-                    ac:originalFile _:originalAudioFile.
-                _:originalAudioFile a ac:AudioFile.
+                    ac:availableAs ?format_bn.
+                ?format_bn
+                    a ac:AudioFile.
+            }
+            ITERATOR iter:JSONPath(?res, "$.format[*]") as ?format
+            WHERE {
+                BIND(BNODE(STR(?format)) as ?format_bn)
+            }.
+            
+            GENERATE {
+                ?audioClip ac:audioCategory ?category
+            }
+            ITERATOR iter:JSONPath(?res, "$.subject[*]") as ?tag
+            WHERE {
+                BIND(STR(?tag) AS ?tagStr)
+                # Bind a ?category for each used tag
+                BIND(IRI(CONCAT(
+                    STR(iarchive-tags:),
+                    ?tagStr)) AS ?category)
+            }.
+            
+            ?audioPublication
+                a ac:AudioPublication;
+                ac:publishedAudioManifestation ?audioClip;
+                event:time [
+                    a time:TemporalEntity, time:Instant;
+                    time:inXSDDateTime ?creationDateTime
+                ].
         }
         ITERATOR iter:JSONElement(?resultSet, "$.[*]") AS ?results
         WHERE {
             BIND(BNODE() AS ?audioCollectionNode)
             BIND(fn:JSONPath(?results, "element") AS ?res)
-            BIND(fn:JSONPath(?results, "position") AS ?indexFromZero)
-            BIND(?indexFromZero + 1 AS ?index)
             
             BIND(STR(fn:JSONPath(?res,"$.title")) AS ?title)
             BIND(STR(fn:JSONPath(?res,"$.description")) AS ?description)
             BIND(IRI(fn:JSONPath(?res,"$.licenseurl")) AS ?license)
-            BIND(STR(fn:JSONPath(?res,"$.creator")) AS ?creator)
-            BIND(BNODE() as ?audioClip)
+            #BIND(STR(fn:JSONPath(?res,"$.creator")) AS ?creator)
+            BIND(IRI(CONCAT(
+                STR(iarchive-users:),
+                ENCODE_FOR_URI(fn:JSONPath(?res, "$.creator")))) AS ?creator)
+            BIND(IRI(CONCAT(
+                STR(iarchive-users:),
+                ENCODE_FOR_URI(fn:JSONPath(?res, "$.publisher")))) AS ?publisher)
+            BIND(IRI(CONCAT(
+                STR(iarchive-tags:),
+                STR(fn:JSONPath(?res,"$.identifier")))) AS ?audioClip)
+            BIND(BNODE() AS ?audioPublication)
+            BIND(xsd:dateTime(fn:JSONPath(?res, "$.publicdate")) AS ?creationDateTime)
         }.
     }
     SOURCE ?ia_url AS ?source
@@ -81,15 +129,13 @@ GENERATE {
     }.
 }
 WHERE {
+    BIND("cat" AS $pattern)
     BIND(IRI(CONCAT(
         STR(iarchive-api:),
-        "?q=",
-        ENCODE_FOR_URI("title:(cat) AND mediatype:(audio)"), # ($pattern)
-        "&fl[]=title",
-        "&fl[]=description",
-        "&fl[]=licenseurl",
-        "&fl[]=creator",
-        "&sort[]=&sort[]=&sort[]=",#&rows=50&page=1",
+        "?q=title",
+        ENCODE_FOR_URI(":("),
+        $pattern,
+        ENCODE_FOR_URI(") AND mediatype:(audio)"),
         "&output=json"
     )) AS ?ia_url)
 }

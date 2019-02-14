@@ -1,0 +1,1403 @@
+@base          <http://example.org/> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix ac:    <https://w3id.org/ac-ontology/aco#> .
+@prefix fn:    <http://w3id.org/sparql-generate/fn/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iarchive-tags: <https://w3id.org/audiocommons/services/iarchive/tags/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix iarchive-users: <https://w3id.org/audiocommons/services/iarchive/users/> .
+@prefix time:  <https://www.w3.org/2006/time#> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix iarchive-sounds: <https://w3id.org/audiocommons/services/iarchive/sounds/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix iarchive-api: <https://archive.org/advancedsearch.php> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+iarchive-tags:CatPeople_22
+        a                 ac:AudioClip ;
+        dc:description    "David Bowie - Cat People" ;
+        dc:title          "Cat People" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22cat%20people%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22david%20bowie%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22let%5Cu0027s%20dance%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22putting%20out%20fire%22> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+<https://w3id.org/audiocommons/services/iarchive/users/New%20York%20%3A%20Atco>
+        a             foaf:Agent ;
+        ac:published  iarchive-tags:alleycatsoundrec00fabr .
+
+<https://w3id.org/audiocommons/services/iarchive/users/Skywrite%20Production>
+        a             foaf:Agent ;
+        ac:published  iarchive-tags:cd_cat_cat .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2006-04-06T12:04:42Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:HotCat
+] .
+
+iarchive-tags:78_friady-cat_vaughn-monroe-and-his-orchestra-nick-bordeur-vaughn-monroe_gbia0015353b
+        a                 ac:AudioClip ;
+        dc:description    "Performer: Vaughn Monroe and his Orchestra; Vaughn Monroe Writer: Nick Bordeur Fox Trot; Vocal refrain. Digitized at 78 revolutions per minute. Four stylii were used to transfer this record. They are 3.5 mil truncated eliptical, 2.3 mil truncated conical, 2.8 mil truncated conical, 3.3 mil truncated conical. These were recorded flat and then also equalized with Turnover: 375.0, Rolloff: -12.0. The preferred versions suggested by an audio engineer at George Blood, L.P. have been copied to have the more friendly filenames. Matrix number: B-11344B Catalog number: B-11344-B" ;
+        dc:title          "'Fraidy Cat" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22Jazz%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%2278rpm%22> ;
+        ac:author         <https://w3id.org/audiocommons/services/iarchive/users/%5B%22Vaughn%20Monroe%20and%20his%20Orchestra%22%2C%22Nick%20Bordeur%22%2C%22Vaughn%20Monroe%22%5D> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+iarchive-tags:CatCat_772
+        a                 ac:AudioClip ;
+        cc:license        <http://creativecommons.org/publicdomain/zero/1.0/> ;
+        dc:description    "TAPE MODERNE (a) modernizing compact cassette tapes (b) photographing dirty kitchenwares http://tapemoderne.blogspot.com/" ;
+        dc:title          "CAT CAT" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22CAT%20CAT%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22TAPE%20MODERNE%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22HAWAIIAN%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22ORWELL%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22JAPANESE%20STONED%20ELECTRONICS%22> ;
+        ac:author         <https://w3id.org/audiocommons/services/iarchive/users/CAT%20CAT> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2009-05-26T00:30:19Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:HitlersCat_329
+] .
+
+iarchive-tags:HitlersCat_49
+        a                ac:AudioClip ;
+        dc:description   "hitler's cat" ;
+        dc:title         "hitler's cat" ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2011-12-12T17:00:26Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:jamendo-005228
+] .
+
+iarchive-tags:Black_Cat_White_Cat
+        a                ac:AudioClip ;
+        dc:description   "Gymnastics floormusic, demo of Black Cat, White Cat" ;
+        dc:title         "Black Cat, White Cat" ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2012-01-14T03:34:19Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:NyanCat
+] .
+
+iarchive-tags:DarkStar_247
+        a                 ac:AudioClip ;
+        dc:description    "house party 9-24-11 aud. recording AKG's 480's PDM-660 deck" ;
+        dc:title          "China Cat" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22drums%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Chuck%20Waldrop%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22guitar%20vol.%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Bass%20vol%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Chuck%20Baker%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Ed%20Spencer%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22jah%20wheel%20/%20Darrell%20Lea%22> ;
+        ac:author         <https://w3id.org/audiocommons/services/iarchive/users/chuck%20b.> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+iarchive-tags:BluesCat
+        a                ac:AudioClip ;
+        cc:license       <http://creativecommons.org/licenses/publicdomain/> ;
+        dc:description   "'He's been around forever, helped Robert write his songs'" ;
+        dc:title         "Blues Cat" ;
+        ac:author        <https://w3id.org/audiocommons/services/iarchive/users/MF%20Foster> ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+iarchive-users:0  a   foaf:Agent ;
+        ac:published  iarchive-tags:cd_cat-stevens_cat-stevens , iarchive-tags:cd_cat_catherine-russell .
+
+iarchive-tags:CatCrap
+        a                 ac:AudioClip ;
+        dc:description    "Pinlock system to keep your helmet shield from fogging up? Shoot, I use Cat Crap! http://www.ekusa.com ******************** Want FREE SoopaBee Stickers? Send me a private message on YouTube, message me on Facebook/Twitter, or send an email to SoopaBee@SoopaBee.com with your name and address. Podcasts https://Archive.org/details/soopabee Motovlogs https://YouTube.com/SoopaBee Movies & Cinema https://YouTube.com/SoopaBeeMovies Facebook https://Facebook.com/SoopaBee1 Twitter https://twitter.com/SoopaBee1 Suicide Prevention https://SuicidePreventionLifeline.org http://YourLifeYourVoice.org Logos Designed by: Adventures in Real Life https://www.youtube.com/user/adventuresinreallife MotoB3 https://www.youtube.com/channel/UCBWfh1iACjZ2z1kweh4gcoA http://SoopaBee.com" ;
+        dc:title          "Cat Crap" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22motorcycle%20podcasts%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22podcast%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Motorcycle%20videos%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Honda%20Shadow%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22defogger%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22lens%20defogger%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Motorcycle%20video%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Super%20B%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22youtube%20videos%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22SoopaBee%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%222002%20Honda%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Motovlogs%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Motovlog%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22motorcycle%20podcast%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Honda%20Motorcycle%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22youtube%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Motovlogger%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22lens%20cleaner%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22podcasts%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Super%20Bee%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Motorcycle%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Honda%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Honda%20Shadow%20Sabre%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%222002%20Honda%20Shadow%20Sabre%22> ;
+        ac:author         iarchive-users:SoopaBee ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+iarchive-tags:CatChat
+        a                 ac:AudioClip ;
+        dc:description    "student work" ;
+        dc:title          "Cat Chat" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22student%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22computer%20education%22> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2013-05-11T20:49:41Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:SeWsCatExpressions27Sept090
+] .
+
+iarchive-tags:78_cat-hop_sonny-boy-williamson-his-harmonica-houserockers-w-williamson_gbia0057733b
+        a                 ac:AudioClip ;
+        dc:description    "Performer: Sonny Boy Williamson his Harmonica & Houserockers Writer: W. Williamson Digitized at 78 revolutions per minute. Four stylii were used to transfer this record. They are 3.5mil truncated eliptical, 2.3mil truncated conical, 2.8mil truncated conical, 3.3mil truncated conical. These were recorded flat and then also equalized with Turnover: 250.0, Rolloff: -5.0. The preferred versions suggested by an audio engineer at George Blood, L.P. have been copied to have the more friendly filenames. Matrix number: DRC180 Catalog number: No. 212 Other IDs from the record include: DRC-180; ACA2560" ;
+        dc:title          "Cat Hop" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%2278rpm%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Blues%22> ;
+        ac:author         <https://w3id.org/audiocommons/services/iarchive/users/%5B%22Sonny%20Boy%20Williamson%20his%20Harmonica%20%5Cu0026%20Houserockers%22%2C%22W.%20Williamson%22%5D> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+iarchive-tags:CatChat_201704
+        a                ac:AudioClip ;
+        dc:description   "CATCHAT" ;
+        dc:title         "Cat Chat" ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2017-04-23T08:07:35Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:CatChat_201704
+] .
+
+iarchive-tags:silbalieiro_gmail_Cat
+        a                ac:AudioClip ;
+        dc:description   "Cat - Audio" ;
+        dc:title         "cat" ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+iarchive-tags:CatdharmaTalk
+        a                 ac:AudioClip ;
+        cc:license        <http://creativecommons.org/licenses/by-nc-nd/3.0/> ;
+        dc:description    "Empty Bowl Sangha dharma talk for March 9, 2012" ;
+        dc:title          "Cat" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22zen%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22dharma%20talk%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22buddhism%22> ;
+        ac:author         <https://w3id.org/audiocommons/services/iarchive/users/Joko%20Dave%20Haselwood> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+iarchive-tags:ScreamingCat
+        a                ac:AudioClip ;
+        dc:description   "Sound of cats screaming." ;
+        dc:title         "Screaming Cat" ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2015-12-16T22:18:10Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:CatCrap
+] .
+
+<https://archive.org/>
+        a          foaf:Organization ;
+        foaf:name  "Internet Archive" .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2010-12-17T00:05:58Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:YoungCat
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2008-08-25T14:20:16Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:Asfast-Cat
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2005-09-14T06:48:57Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:Black_Cat_White_Cat
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2009-04-03T19:59:41Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:catcat_0
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2018-06-22T06:58:25Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:cd_cat-spectacular_bearsuit
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2018-05-27T14:11:49Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:acidplanet-audio-01219665
+] .
+
+iarchive-users:Columbia
+        a             foaf:Agent ;
+        ac:published  iarchive-tags:78_fraidy-cat_grey-elliott-ada-jones_gbia0000638b .
+
+iarchive-tags:NyanCat
+        a                ac:AudioClip ;
+        cc:license       <http://creativecommons.org/licenses/by/3.0/> ;
+        dc:description   "Joe looks into the cutest gif ever for a deeper meaning inside." ;
+        dc:title         "Nyan Cat" ;
+        ac:author        <https://w3id.org/audiocommons/services/iarchive/users/popularmediashow%40gmail.com> ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2018-01-03T05:09:26Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:cd_cat_catherine-russell
+] .
+
+iarchive-tags:bhinman19_1d_yahoo_Cat
+        a                ac:AudioClip ;
+        dc:description   "Cat Noises" ;
+        dc:title         "Cat" ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+iarchive-tags:BlackCat_479
+        a                ac:AudioClip ;
+        dc:description   "GGGHHH" ;
+        dc:title         "BLACK CAT" ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+iarchive-tags:BigCat_201306
+        a                ac:AudioClip ;
+        cc:license       <http://creativecommons.org/publicdomain/mark/1.0/> ;
+        dc:description   "BIG CAT" ;
+        dc:title         "Big Cat" ;
+        ac:author        iarchive-users:VJ ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+[ a                    schema:SearchAction ;
+  schema:actionStatus  schema:CompletedActionStatus ;
+  schema:endTime       "2019-02-14T17:47:21.659+00:00"^^xsd:dateTime ;
+  schema:object        <https://archive.org/> ;
+  schema:query         "cat" ;
+  schema:result        [ a              ac:AudioCollection ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:cd_cat_catherine-russell
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:Asfast-Cat
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:78_cat-nap_tiny-bradshaw-and-his-orchestra-al-sears_gbia0062715a
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:CatShaving
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:ToriCat
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:CatPurr_201308
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:CatTime
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:BigCat_201306
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:YoungCat
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:78_cat-hop_sonny-boy-williamson-his-harmonica-houserockers-w-williamson_gbia0057733b
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:ScreamingCat
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:78_fraidy-cat_grey-elliott-ada-jones_gbia0000638b
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:cd_cat_cat
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:SexyCat
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:CatCrap
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:acidplanet-audio-00446518
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:BlackCat_103
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:HitlersCat_329
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:ear004_201705
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:catbycorvonlordhaze
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:jamendo-005228
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:BlackCat_479
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:HitlersCat_49
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:dev_Cat
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:cd_cat-spectacular_bearsuit
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:78_friady-cat_vaughn-monroe-and-his-orchestra-nick-bordeur-vaughn-monroe_gbia0015353b
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:catcat_0
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:NyanCat
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:BluesCat
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:49mAT001_krystian_the_cat_-_astro_cat_disco
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:CatdharmaTalk
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:HotCat
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:SeWsCatExpressions27Sept090
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:silbalieiro_gmail_Cat
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:PussyCat_715
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:HitlersCat_830
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:CatChat_201704
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:IttyPurring
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:Kitty_Cat
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:cd_cat-stevens_cat-stevens
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:CatPeople_22
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:CatWhackers
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:DarkStar_247
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:alleycatsoundrec00fabr
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:CatChat
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:bhinman19_1d_yahoo_Cat
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:acidplanet-audio-00530117
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:CatCat_772
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:Black_Cat_White_Cat
+                                        ] ;
+                         ac:memberNode  [ a               ac:AudioCollectionNode ;
+                                          ac:nodeContent  iarchive-tags:acidplanet-audio-01219665
+                                        ]
+                       ] ;
+  schema:startTime     "2019-02-14T17:47:21.659+00:00"^^xsd:dateTime
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2018-05-11T14:39:22Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:dev_Cat
+] .
+
+iarchive-tags:alleycatsoundrec00fabr
+        a                ac:AudioClip ;
+        dc:description   "[\"Popular songs; Bent Fabric \\u0026 his piano\",\"Recorded by Metronome Records, Copenhagen, Denmark\",\"Program notes by Bob Altshuler on container\",\"Alley cat -- Across the alley from the Alamo -- You made me love you -- Trudie -- Markin\\u0027 time -- In the arms of my love -- Delilah -- Catsanova walk -- Symphony -- Early morning in Copenhagen -- Comme ci\\u0027 comme ca -- Baby won\\u0027t you please come home\"]" ;
+        dc:title         "Alley Cat" ;
+        ac:author        <https://w3id.org/audiocommons/services/iarchive/users/The%20Capp-Pierce%20Juggernaut> ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+iarchive-tags:HotCat  a   ac:AudioClip ;
+        cc:license        <http://creativecommons.org/licenses/by-nc-nd/2.5/> ;
+        dc:title          "Hot Cat" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22Rock%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Instrumental%22> ;
+        ac:author         <https://w3id.org/audiocommons/services/iarchive/users/Bruno%20PITCH> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2018-05-06T09:16:17Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:ScreamingCat
+] .
+
+iarchive-tags:jamendo-005228
+        a                ac:AudioClip ;
+        dc:description   "Cosmic Cat - Remember to Feed Your Cat Jamendo Album #005228 Tracklisting: 01 - Remember to Feed Your Cat Please read the Readme.txt and License.txt files for important origin and licensing information." ;
+        dc:title         "Cosmic Cat - Remember to Feed Your Cat" ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2018-08-22T10:03:50Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:78_cat-nap_tiny-bradshaw-and-his-orchestra-al-sears_gbia0062715a
+] .
+
+iarchive-tags:IttyPurring
+        a                 ac:AudioClip ;
+        cc:license        <http://creativecommons.org/licenses/by-nc-nd/3.0/> ;
+        dc:description    "My cat, Itty, purring in my lap." ;
+        dc:title          "Cat Purring" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22Purring%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Cat%22> ;
+        ac:author         <https://w3id.org/audiocommons/services/iarchive/users/DJ%20Mistress%20Macabre> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+iarchive-tags:acidplanet-audio-01219665
+        a                 ac:AudioClip ;
+        dc:description    "About a cat" ;
+        dc:title          "Hover Cat" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22archiveteam%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22acidplanet%22> ;
+        ac:author         iarchive-users:SPFGJ ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+iarchive-tags:cd_cat_catherine-russell
+        a                ac:AudioClip ;
+        dc:description   "Tracklist: 1. Sad Lover Blues 2. Can't We Be Friends 3. The Late Late Show 4. Where Can I Go Without You 5. Put Me Down Easy 6. My Man's An Undertaker 7. Blue Memories 8. Juneteenth Jamboree 9. Back O'Town Blues 10. Someday (You'll Want Me To Want You) 11. The Poker 12. You Were Made For Me 13. Darn That Dream 14. Deep In A Dream 15. New Speedway Boogie" ;
+        dc:title         "Cat" ;
+        ac:author        <https://w3id.org/audiocommons/services/iarchive/users/Catherine%20Russell> ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+iarchive-tags:CatShaving
+        a                 ac:AudioClip ;
+        dc:description    "Short voice instruction how to shave your cat in home. Visit: http://petscentral.net/get-lion-cut-cat/" ;
+        dc:title          "Cat Shaving" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22grooming%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22cats%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22cat%22> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2010-11-09T12:40:47Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:CatCat_772
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2010-04-23T17:21:36Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:alleycatsoundrec00fabr
+] .
+
+iarchive-tags:catcat_0
+        a                ac:AudioClip ;
+        cc:license       <http://www.copyright.gov/> ;
+        dc:description   "cat" ;
+        dc:title         "cat" ;
+        ac:author        iarchive-users:cat ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+iarchive-tags:cd_cat_cat
+        a                ac:AudioClip ;
+        dc:description   "Tracklist: 1. Tall Dark and Silent 2. When I Can't Stand Myself 3. O 4. Say I Do 5. We Can Work It Out" ;
+        dc:title         "CAT" ;
+        ac:author        iarchive-users:CAT ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2009-05-26T07:26:52Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:HitlersCat_830
+] .
+
+iarchive-tags:catbycorvonlordhaze
+        a                 ac:AudioClip ;
+        cc:license        <http://creativecommons.org/licenses/by-sa/3.0/> ;
+        dc:description    "Music By Corvon Lordhaze for \"Cat\" By Corvon Lordhaze" ;
+        dc:title          "Cat" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22ambience%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22ambient%22> ;
+        ac:author         <https://w3id.org/audiocommons/services/iarchive/users/Corvon%20Lordhaze> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+iarchive-tags:HitlersCat_329
+        a                ac:AudioClip ;
+        dc:description   "hitler's cat" ;
+        dc:title         "hitler's cat" ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2010-08-29T10:50:21Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:PussyCat_715
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2017-07-20T17:54:23Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:bhinman19_1d_yahoo_Cat
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2016-08-15T01:16:17Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:CatShaving
+] .
+
+iarchive-tags:78_cat-nap_tiny-bradshaw-and-his-orchestra-al-sears_gbia0062715a
+        a                 ac:AudioClip ;
+        dc:description    "Performer: Tiny Bradshaw and His Orchestra Writer: Al Sears Instrumental. Digitized at 78 revolutions per minute. Four stylii were used to transfer this record. They are 2.0mil truncated conical, 2.3mil truncated conical, 2.8mil truncated conical, 3.3mil truncated conical. These were recorded flat and then also equalized with Turnover: 400.0, Rolloff: -12.0. The preferred versions suggested by an audio engineer at George Blood, L.P. have been copied to have the more friendly filenames. Matrix number: K-9553-1 Catalog number: 4777 Other IDs from the record include: K9553" ;
+        dc:title          "Cat Nap" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22Instrumental%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%2278rpm%22> ;
+        ac:author         <https://w3id.org/audiocommons/services/iarchive/users/%5B%22Tiny%20Bradshaw%20and%20His%20Orchestra%22%2C%22Al%20Sears%22%5D> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2012-06-12T13:27:12Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:CatChat
+] .
+
+iarchive-users:Trumpet
+        a             foaf:Agent ;
+        ac:published  iarchive-tags:78_cat-hop_sonny-boy-williamson-his-harmonica-houserockers-w-williamson_gbia0057733b .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2009-05-26T00:11:21Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:HitlersCat_49
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2011-03-15T01:33:55Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:CatWhackers
+] .
+
+iarchive-tags:acidplanet-audio-00530117
+        a                 ac:AudioClip ;
+        dc:description    "I had been wanting to write a song that used some of the new jazz chords that I had been learning--and one morning, while in the shower, this just came to me. It's about my sister's cat, Boo. Maybe it's just the way the chords came out in the middle section, but the song took on a life of its own there--with a decidedly Bare Naked Ladies-esque sound." ;
+        dc:title          "Geriatric Cat" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22archiveteam%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22acidplanet%22> ;
+        ac:author         iarchive-users:bluelightband ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+iarchive-tags:cd_cat-stevens_cat-stevens
+        a                ac:AudioClip ;
+        dc:description   "Tracklist: 1. Wild World 2. Morning has Broken" ;
+        dc:title         "Cat Stevens" ;
+        ac:author        <https://w3id.org/audiocommons/services/iarchive/users/Cat%20Stevens> ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2017-03-21T23:14:41Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:78_fraidy-cat_grey-elliott-ada-jones_gbia0000638b
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2007-11-02T08:02:45Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:CatTime
+] .
+
+iarchive-tags:ear004_201705
+        a                 ac:AudioClip ;
+        dc:description    "CATS" ;
+        dc:title          "[EAR004] Cat Care - Cat Care (2017)" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22ear%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22hnw%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22harsh%20noise%20wall%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22ecology%20attack%20records%22> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2017-10-22T17:27:11Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:CatPeople_22
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2017-05-13T10:36:03Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:ear004_201705
+] .
+
+iarchive-tags:BlackCat_103
+        a                 ac:AudioClip ;
+        dc:description    "Paint it black, cat..." ;
+        dc:title          "Black cat" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22black%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22cat%22> ;
+        ac:author         <https://w3id.org/audiocommons/services/iarchive/users/Julie%20Driscoll%2C%20Brian%20Auger%20%26%20The%20Trinity> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2011-01-04T06:48:54Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:ToriCat
+] .
+
+iarchive-tags:YoungCat
+        a                 ac:AudioClip ;
+        dc:description    "meow" ;
+        dc:title          "young cat" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22meow%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22cat%22> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+iarchive-tags:PussyCat_715
+        a                 ac:AudioClip ;
+        dc:description    "Con Meo Di Hia" ;
+        dc:title          "Pussy Cat" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22Bin%20to%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22Bin%20t%C3%A1%C2%BB%C2%93%22> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2012-03-10T07:27:47Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:CatdharmaTalk
+] .
+
+iarchive-tags:Asfast-Cat
+        a                ac:AudioClip ;
+        dc:description   "breaks, beats, cores" ;
+        dc:title         "Asfast - Cat" ;
+        ac:author        iarchive-users:Asfast ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+iarchive-tags:HitlersCat_830
+        a                ac:AudioClip ;
+        dc:description   "hc" ;
+        dc:title         "Hitler's Cat" ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+iarchive-tags:ToriCat
+        a                ac:AudioClip ;
+        cc:license       <http://creativecommons.org/publicdomain/zero/1.0/> ;
+        dc:description   "Tori Cat" ;
+        dc:title         "Tori Cat" ;
+        ac:author        <https://w3id.org/audiocommons/services/iarchive/users/Tori%20Cat> ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+iarchive-tags:cd_cat-spectacular_bearsuit
+        a                ac:AudioClip ;
+        dc:description   "No barcode Tracklist: 1. Welcome Bearsuit Spacehotel 2. Cookie Oh Jesus 3. Rodent Disco 4. Cherryade 5. I Feel the Heat of the Light From Heaven 6. Going Steady 7. Itsuko Got Married 8. Prove Katie Wrong 9. TSTM 10. Diagonal Girl 11. Kiki Keep Me Company 12. On Your Special Day" ;
+        dc:title         "Cat Spectacular" ;
+        ac:author        iarchive-users:Bearsuit ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2013-06-12T10:44:00Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:BigCat_201306
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2011-01-17T18:46:02Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:BlackCat_479
+] .
+
+iarchive-tags:Kitty_Cat
+        a                ac:AudioClip ;
+        dc:description   "Kitty cat song very funny, Enjoy!" ;
+        dc:title         "Kitty Cat" ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+iarchive-users:King  a  foaf:Agent ;
+        ac:published  iarchive-tags:78_cat-nap_tiny-bradshaw-and-his-orchestra-al-sears_gbia0062715a .
+
+iarchive-tags:SexyCat
+        a                 ac:AudioClip ;
+        dc:description    "On his first release, \"Sexy Cat EP\" , flange really changes the channel and probably likes what he seen." ;
+        dc:title          "sexy cat" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22boris%20karloff%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22dick%20flange%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22sexy%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22cat%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22flange%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22dick%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22sexy%20cat%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22keywords%20separated%20by%20commas%22> ;
+        ac:author         <https://w3id.org/audiocommons/services/iarchive/users/dick%20flange> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2008-08-17T13:50:33Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:BluesCat
+] .
+
+iarchive-tags:dev_Cat
+        a                ac:AudioClip ;
+        dc:description   "kids" ;
+        dc:title         "cat" ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2017-09-29T16:31:43Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:IttyPurring
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2005-09-16T21:28:58Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:Kitty_Cat
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2016-10-25T07:49:27Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:catbycorvonlordhaze
+] .
+
+iarchive-tags:49mAT001_krystian_the_cat_-_astro_cat_disco
+        a                ac:AudioClip ;
+        cc:license       <http://creativecommons.org/licenses/by/3.0/> ;
+        dc:description   "christmas edition!" ;
+        dc:title         "49mAT001_krystian_the_cat_-_astro_cat_disco" ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2010-12-24T23:19:15Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:49mAT001_krystian_the_cat_-_astro_cat_disco
+] .
+
+iarchive-tags:CatPurr_201308
+        a                 ac:AudioClip ;
+        cc:license        <http://creativecommons.org/licenses/by-nc-sa/3.0/> ;
+        dc:description    "Ambient recording of neighbour's cat, 8 August 2013 http://12gatestothecity.com/hebdomadal-sound-project/" ;
+        dc:title          "Cat purr" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%2212%20Gates%20to%20the%20City%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22cat%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22hebdomadal%20sound%20project%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22field%20recording%22> ;
+        ac:author         <https://w3id.org/audiocommons/services/iarchive/users/12%20Gates%20to%20the%20City> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+iarchive-tags:CatTime
+        a                ac:AudioClip ;
+        dc:description   "miaou sounds" ;
+        dc:title         "cat time" ;
+        ac:author        iarchive-users:ascalaphe ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2010-02-21T23:29:48Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:SexyCat
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2018-07-20T03:04:19Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:78_cat-hop_sonny-boy-williamson-his-harmonica-houserockers-w-williamson_gbia0057733b
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2010-12-09T16:53:39Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:BlackCat_103
+] .
+
+iarchive-tags:acidplanet-audio-00446518
+        a                 ac:AudioClip ;
+        dc:description    "Something from my RatTLeD bRAiN... ???nolables???" ;
+        dc:title          "Sticky Cat" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22archiveteam%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22acidplanet%22> ;
+        ac:author         iarchive-users:MyK ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2018-05-26T16:43:25Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:acidplanet-audio-00530117
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2018-04-22T05:11:10Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:cd_cat_cat
+] .
+
+iarchive-tags:CatWhackers
+        a                 ac:AudioClip ;
+        cc:license        <http://creativecommons.org/publicdomain/zero/1.0/> ;
+        dc:description    "Audio Play:Comedy. Cat Whackers is the story of two fun loving, twenty-something, idiots who are fumbling their way through the modern world. Brian is a geeky dreamer, whose girlfriend is more interested in her relationship with her cat. Jake is a creepy schemer, who figures a way to get rid of the flea bag. In doing so, the duo discover that \"Dudes will pay mad cash to have their girlfriend's annoying cats whacked!\" And so, the lovable pair go into business whacking cats for cold hard cash . . . with predictably disastrous results. Check out other Washington Audio Theater productions at washingtonaudiotheater.com" ;
+        dc:title          "Cat Whackers" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22radio%20show%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22comedy%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22audio%20theater%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22radio%20drama%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22audio%20theatre%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22otr%22> ;
+        ac:author         <https://w3id.org/audiocommons/services/iarchive/users/Michael%20Madden> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+<https://w3id.org/audiocommons/services/iarchive/users/Microindie%20Records>
+        a             foaf:Agent ;
+        ac:published  iarchive-tags:cd_cat-spectacular_bearsuit .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2012-01-03T14:34:59Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:DarkStar_247
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2018-06-20T03:07:21Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:cd_cat-stevens_cat-stevens
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2018-05-27T13:43:48Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:acidplanet-audio-00446518
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2017-08-26T09:12:29Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:78_friady-cat_vaughn-monroe-and-his-orchestra-nick-bordeur-vaughn-monroe_gbia0015353b
+] .
+
+iarchive-users:Bluebird
+        a             foaf:Agent ;
+        ac:published  iarchive-tags:78_friady-cat_vaughn-monroe-and-his-orchestra-nick-bordeur-vaughn-monroe_gbia0015353b .
+
+iarchive-tags:78_fraidy-cat_grey-elliott-ada-jones_gbia0000638b
+        a                ac:AudioClip ;
+        dc:description   "Soprano Solo; Orchestra Accompaniment; Sung by Ada Jones. Digitized at 78 revolutions per minute. Four stylii were used to transfer this record. They are 3.5 mil truncated eliptical, 2.3 mil truncated conical, 2.8 mil truncated conical, 3.3 mil truncated conical. The preferred versions suggested by an audio engineer at George Blood, L.P. have been copied to have the more friendly filenames. Matrix number: 4303-1-2 Catalog number: A791 Other IDs from the record include: (4303)" ;
+        dc:title         "Fraidy Cat" ;
+        ac:author        <https://w3id.org/audiocommons/services/iarchive/users/%5B%22Grey%20Elliott%22%2C%22Ada%20Jones%22%5D> ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:availableAs   [ a  ac:AudioFile ] ;
+        ac:originalFile  [ a  ac:AudioFile ] .
+
+iarchive-tags:SeWsCatExpressions27Sept090
+        a                 ac:AudioClip ;
+        cc:license        <http://creativecommons.org/licenses/by-nc-nd/3.0/> ;
+        dc:description    "This is very interesting reading and listening practice for learners of English as a Second Language, young readers, and literacy students. For more of these excellent materials, please visit http://missionlanguagelab.blogspot.com This website has many links for listening, reading, grammar, pronunciation, and conversation. In addition to language skills, we emphasize the humanities and life long learning at Mission Language Lab." ;
+        dc:title          "Cat Expressions" ;
+        ac:audioCategory  <https://w3id.org/audiocommons/services/iarchive/tags/%22Listening%22> , <https://w3id.org/audiocommons/services/iarchive/tags/%22ESL%22> ;
+        ac:author         <https://w3id.org/audiocommons/services/iarchive/users/Voice%20of%20America> ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:availableAs    [ a  ac:AudioFile ] ;
+        ac:originalFile   [ a  ac:AudioFile ] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2013-08-20T16:06:15Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:CatPurr_201308
+] .
+
+[ a                               ac:AudioPublication ;
+  event:time                      [ a                   time:Instant , time:TemporalEntity ;
+                                    time:inXSDDateTime  "2019-01-09T16:09:56Z"^^xsd:dateTime
+                                  ] ;
+  ac:publishedAudioManifestation  iarchive-tags:silbalieiro_gmail_Cat
+] .
