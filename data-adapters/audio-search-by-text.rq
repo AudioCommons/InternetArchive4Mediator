@@ -58,16 +58,16 @@ GENERATE {
                 ac:published ?audioClip;
                 a foaf:Agent.
             
-            GENERATE {
-                ?audioClip
-                    ac:availableAs ?format_bn.
-                ?format_bn
-                    a ac:AudioFile.
-            }
-            ITERATOR iter:JSONPath(?res, "$.format[*]") as ?format
-            WHERE {
-                BIND(BNODE(STR(?format)) as ?format_bn)
-            }.
+            # GENERATE {
+                # ?audioClip
+                    # ac:availableAs ?format_bn.
+                # ?format_bn
+                    # a ac:AudioFile.
+            # }
+            # ITERATOR iter:JSONPath(?res, "$.format[*]") as ?format
+            # WHERE {
+                # BIND(BNODE(STR(?format)) as ?format_bn)
+            # }.
             
             GENERATE {
                 ?audioClip ac:audioCategory ?category
@@ -115,7 +115,7 @@ GENERATE {
     WHERE {
         BIND(fn:JSONPath(?source, "$.response.docs") AS ?resultSet)
         BIND(BNODE() AS ?searchAction)
-        BIND(NOW() as $startTime)
+        #BIND(NOW() as $startTime)
         BIND(NOW() as ?endTime)
         BIND(IF(BOUND(?resultSet), schema:CompletedActionStatus, schema:FailedActionStatus) AS ?actionStatus)
         OPTIONAL {
@@ -129,7 +129,7 @@ GENERATE {
     }.
 }
 WHERE {
-    BIND("cat" AS $pattern)
+    #BIND("cat" AS $pattern)
     BIND(IRI(CONCAT(
         STR(iarchive-api:),
         "?q=title",
