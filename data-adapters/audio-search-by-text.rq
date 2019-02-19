@@ -93,6 +93,7 @@ GENERATE {
         WHERE {
             BIND(BNODE() AS ?audioCollectionNode)
             BIND(fn:JSONPath(?results, "element") AS ?res)
+            BIND(fn:JSONPath(?results, "position")+1 AS ?index)
             
             BIND(STR(fn:JSONPath(?res,"$.title")) AS ?title)
             BIND(STR(fn:JSONPath(?res,"$.description")) AS ?description)
@@ -136,7 +137,8 @@ WHERE {
         ENCODE_FOR_URI(":("),
         $pattern,
         ENCODE_FOR_URI(") AND mediatype:(audio)"),
-        "&output=json"
+        "&output=json",
+        "&rows=1"
     )) AS ?ia_url)
 }
 #<https://archive.org/advancedsearch.php?q=title%3A(cat)+AND+mediatype%3A(audio)&fl[]=title&fl[]=description&fl[]=licenseurl&fl[]=creator&sort[]=&sort[]=&sort[]=&rows=50&page=1&output=json>
