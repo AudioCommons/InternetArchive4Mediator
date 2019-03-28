@@ -25,7 +25,7 @@
 import sys
 import argparse
 from urllib.parse import urlencode
-import requests
+#import requests
 import json
 
 baseurl = "https://archive.org/advancedsearch.php?"
@@ -75,21 +75,26 @@ choiceList = [
     "year"]
 
 def main(args):
-    jsonurl = {"&fl[]": field for field in args["f"]}
-    urlArgs = ["&"+urlencode({"fl[]": field}) for field in args["f"]]
+    if args["f"] is None:
+	    urlArgs = []
+    else:
+        jsonurl = {"&fl[]": field for field in args["f"]}
+        urlArgs = ["&"+urlencode({"fl[]": field}) for field in args["f"]]
     requestURL = baseurl + \
-        urlencode({"q": "title:({}) AND mediatype:(audio)".format(args["title"]), "output": "json"}) + \
+        urlencode({"q": "title:({}) AND mediatype:(audio)".format(args["pattern"]), 
+		           "rows": args["r"], "page": args["p"], "output": "json", "save": "yes"}) + \
         "".join(urlArgs)
     print("URL: {}".format(requestURL))
-    r = requests.get(requestURL)
-    r.connection.close()
-    print("Status code: {}\nOutput: {}".format(r.status_code, r.text))
-    print(jsonurl)
+    #r = requests.get(requestURL)
+    #r.connection.close()
+    #print("Status code: {}\nOutput: {}".format(r.status_code, r.text))
     return 0
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Internet Archive query url generator")
-    parser.add_argument("title", help="Title contains")
-    parser.add_argument("-f", action="append", required=True, choices=choiceList, help="Fields to be returned")
+    parser.add_argument("pattern", help="Pattern to be researched")
+    parser.add_argument("-f", action="append", choices=choiceList, help="Fields to be returned")
+    parser.add_argument("-r", action="store", default=50, help="Number of results")
+    parser.add_argument("-p", action="store", default=1, help="Page number")
     arguments = vars(parser.parse_args())
     sys.exit(main(arguments))
